@@ -1,0 +1,16 @@
+title: KG2020
+description: data demo WebGL KG2020
+template:
+  repo: kg2020-template
+  name: kg2020
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
